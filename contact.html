@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+<meta name="author" content="Surjith S M">
+<meta name="description" content="Gather is a responsive Template for Events, Meetups, Conference and other gatherings.">
+<meta name="keywords" content="gather, responsive, event, meetup, template, conference, gather, rsvp, download">
+ 
+
+<link rel="shortcut icon" href="images/favicon.ico">
+ 
+<title>Computer Science Week 2017</title>
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+ 
+ <!--     Fonts and icons     -->
+ 
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+ 
+	<!-- 	<link rel="stylesheet" href="../assets/css/font-awesome.min.css" /> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<script src="https://use.fontawesome.com/92d211b24e.js"></script>
+
+
+<link href="css/plugins/animate.css" rel="stylesheet">
+<link href="css/plugins/slick.css" rel="stylesheet">
+<link href="css/plugins/magnific-popup.css" rel="stylesheet">
+<link href="css/plugins/font-awesome.css" rel="stylesheet"> 
+<link href="css/plugins/streamline-icons.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+ 
+<link href="css/event.css" rel="stylesheet">
+ 
+ 
+<link href="css/themes/green.css" rel="stylesheet">
+ 
+ 
+<link rel="stylesheet" title="green" media="screen" href="css/themes/green.css">
+
+
+ 
+ 
+<!--[if lt IE 9]>
+  <script src="js/ie/respond.min.js"></script>
+  <![endif]-->
+ 
+<script src="js/modernizr.min.js"></script>
+ 
+<script src="js/plugins/pace.js"></script>
+</head>
+<body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
+ 
+<div class="preloader"></div>
+ 
+<nav class="navbar navbar-default navbar-fixed-top reveal-menu js-reveal-menu reveal-menu-hidden">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#"><img src="images/event-logo-dark.png" alt="Gather"> </a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="sponsors.html">Sponsorship</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+ 
+</div>
+</nav>
+ 
+<section class="footer-action">
+<div class="container">
+<h4 class="headline-support wow fadeInDown">LETS GATHER TOGETHER</h4>
+<h2 class="headline wow fadeInDown" data-wow-delay="0.1s">JOIN THE CONFERENCE</h2>
+<div class="footer_bottom-bg">
+<a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#" data-toggle="modal" data-target="#email-register">RESERVE MY SEAT</a>
+</div>
+</div>
+</section>
+ 
+
+<div class="container" id="contact">
+<div class="section-title">
+<h5>SEND US A MESSAGE</h5>
+<p>If you have any questions about the event, please contact us directly. We will respond for sure.</p>
+</div>
+<div class="contact-form bottom-space-xl wow fadeInUp">
+<form action="php/contact.php" id="phpcontactform" method="POST">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label>First Name</label>
+<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" class="form-control" name="last_name" placeholder="last name" required>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>Email ID</label>
+<input type="email" class="form-control" name="email" placeholder="Email Address" required>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+</div>
+<div class="form-group">
+<label>Your Message</label>
+<textarea class="form-control" name="message" rows="6" placeholder="Enter your message here" required> </textarea>
+</div>
+<div class="text-center top-space">
+<button type="submit" class="btn btn-success btn-block btn-lg" id="js-contact-btn">Send Message</button>
+<div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+ 
+
+
+<div class="g-maps" id="venue">
+ 
+ 
+<div class="map" id="map_canvas" data-maplat="4.901830" data-maplon="6.920485" data-mapzoom="9" data-color="green" data-height="400" data-img="images/marker.png" data-info="University of PortHarcourt"></div>
+</div>
+ 
+ 
+<section id="directions" class="directions vertical-space-lg">
+<div class="container">
+<div class="section-title wow fadeInUp top-space-sm">
+<h4>GET DIRECTIONS</h4>
+<p>Fill the form below to get directions to our event location</p>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label for="routeStart">Direction From:</label>
+<input type="text" id="routeStart" class="form-control" placeholder="Rumuola">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label for="routeVia">Via<small>(Optional)</small> </label>
+<input type="text" class="form-control" id="routeVia" value="">
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="sr-only">Travel mode:</label>
+<label class="radio-inline" for="travelMode1">
+<input type="radio" name="travelMode" id="travelMode1" value="DRIVING" checked /> Driving
+</label>
+<label class="radio-inline" for="travelMode2">
+<input type="radio" name="travelMode" id="travelMode2" value="BICYCLING"/> Bicylcing
+</label>
+<label class="radio-inline" for="travelMode3">
+<input type="radio" name="travelMode" id="travelMode3" value="TRANSIT"/> Public transport
+</label>
+<label class="radio-inline" for="travelMode4">
+<input type="radio" name="travelMode" id="travelMode4" value="WALKING"/> Walking
+</label>
+</div>
+<div class="form-group text-center">
+<button type="submit" class="btn btn-success btn-block"><i class="fa fa-location-arrow"></i> Get Directions </button>
+</div>
+</form>
+</div>
+<div class="col-sm-6">
+<div class="directions-results">
+<div id="directionsPanel">
+<div class="direction-text">Enter Direction from and Travel Mode from the left form to see directions. </div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+</section>
+ 
+ 
+<div class="highlight">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="contact-box">
+<img src="images/location-icon.png" alt="location icon" class="wow zoomIn">
+<h5>ADDRESS</h5>
+<p>Computer Science Department,
+<br>Univerity of PortHarcourt,
+<br> Abuja Campus 
+<br><br>
+
+</div>
+</div>
+<div class="col-sm-6">
+<div class="contact-box">
+<img src="images/email-icon.png" alt="email icon" class="wow zoomIn" data-wow-delay="0.3s">
+<h5>CONTACT</h5>
+<p><a href="/cdn-cgi/l/email-protection#741315001c1106341102111a00031116071d00115a171b19"><span class="__cf_email__" data-cfemail="731412071b1601331605161d07041611001a07165d101c1e">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
+<br> <a href="/cdn-cgi/l/email-protection#5221223d3c213d2012263a3b213724373c267c313d3f"><span class="__cf_email__" data-cfemail="2a595a45445945586a5e4243594f5c4f445e04494547">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
+<br>
+<br> +234 706 763 5870
+<br> +234 
+</p>
+</div>
+</div>
+</div>
+ 
+</div>
+</div>
+ 
+
+<footer>
+<div class="social-icons">
+<a href="#" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
+<a href="#" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
+<a href="#" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-linkedin"></i> </a>
+</div>
+<p> <small class="text-muted">Copyright © 2017. All rights reserved. Made with Love </small></p>
+</footer>
+<a href="#top" class="back_to_top"><img src="images/back_to_top.png" alt="back to top"></a>
+ 
+<div class="modal fade" id="email-register" tabindex="-1" role="dialog" aria-labelledby="register-now-label">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title text-center" id="register-now-label">Event Registration
+</h4>
+</div>
+<div class="modal-body">
+<div class="registration-form">
+<form action="php/register.php" method="POST" target="_top" id="email-registration-form" data-redirect="success.html">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label>First Name</label>
+<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" class="form-control" name="last_name" placeholder="last name" required>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>Email ID</label>
+<input type="email" class="form-control" name="email" placeholder="Email Address" required>
+</div>
+<div class="row">
+
+</div>
+<div class="form-group">
+<div class="checkbox">
+<label>
+<input type="checkbox" name="agree" required> I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
+</label>
+</div>
+</div>
+<div class="text-center top-space">
+<button type="submit" id="register-btn" class="btn btn-success btn-lg js-register-btn">Reserve my Seat</button>
+<div id="js-register-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+ 
+ 
+<script src="js/jquery.min.js"></script>
+ 
+<script src="js/bootstrap.min.js"></script>
+ 
+<script src="js/plugins/countdown.js"></script>
+<script src="js/plugins/wow.js"></script>
+<script src="js/plugins/slick.js"></script>
+<script src="js/plugins/magnific-popup.js"></script>
+<script src="js/plugins/validate.js"></script>
+<script src="js/plugins/appear.js"></script>
+<script src="js/plugins/count-to.js"></script>
+<script src="js/plugins/nicescroll.js"></script>
+ 
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/plugins/infobox.js"></script>
+<script src="js/plugins/google-map.js"></script>
+<script src="js/plugins/directions.js"></script>
+
+<script src="js/includes/contact_form.js"></script>
+<script src="js/includes/register.js"></script>
+ 
+<script src="js/main.js"></script>
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>
+ 
